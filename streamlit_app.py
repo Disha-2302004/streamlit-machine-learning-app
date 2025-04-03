@@ -19,20 +19,9 @@ with st.expander('Data'):
   st.write('**y**')
   y_raw = df.species
   y_raw
-st.write("DataFrame Preview:", df.head())
-st.write("DataFrame Columns:", df.columns)
-import pandas as pd
-
-df = pd.read_csv('https://raw.githubusercontent.com/Disha-2302004/Balanced_dataset/main/balanced_penguins_size_processed.csv')  # Replace with the correct filename
-st.write(df.head())  # Display first few rows
-df.columns = df.columns.str.strip()  # Remove spaces
-df.columns = df.columns.str.lower()  # Convert to lowercase
-
-
-
 
 with st.expander('Data visualization'):
-  st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g', color='species')
+  st.scatter_chart(data=df, x='culmen_length_mm', y='body_mass_g', color='species')
 
 # Input features
 with st.sidebar:
