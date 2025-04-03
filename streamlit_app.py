@@ -35,8 +35,8 @@ with st.sidebar:
   
   # Create a DataFrame for the input features
   data = {'island': island,
-          'bill_length_mm': bill_length_mm,
-          'bill_depth_mm': bill_depth_mm,
+          'culmen_length_mm': culmen_length_mm,
+          'culmen_depth_mm': culmen_depth_mm,
           'flipper_length_mm': flipper_length_mm,
           'body_mass_g': body_mass_g,
           'sex': gender}
