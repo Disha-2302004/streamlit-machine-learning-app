@@ -25,6 +25,9 @@ import pandas as pd
 
 df = pd.read_csv('https://raw.githubusercontent.com/Disha-2302004/Balanced_dataset/main/balanced_penguins_size_processed.csv')  # Replace with the correct filename
 st.write(df.head())  # Display first few rows
+df.columns = df.columns.str.strip()  # Remove spaces
+df.columns = df.columns.str.lower()  # Convert to lowercase
+
 
 
 
