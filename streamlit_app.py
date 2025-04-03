@@ -9,7 +9,7 @@ st.info('This is app builds a machine learning model!')
 
 with st.expander('Data'):
   st.write('**Raw data**')
-  df = pd.read_csv('https://github.com/Disha-2302004/Balanced_dataset/blob/main/balanced_penguins_size_processed.csv')
+  df = pd.read_csv('https://raw.githubusercontent.com/Disha-2302004/Balanced_dataset/main/balanced_penguins_size_processed.csv')
   df
 
   st.write('**X**')
