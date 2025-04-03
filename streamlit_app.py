@@ -21,6 +21,11 @@ with st.expander('Data'):
   y_raw
 st.write("DataFrame Preview:", df.head())
 st.write("DataFrame Columns:", df.columns)
+import pandas as pd
+
+df = pd.read_csv('https://raw.githubusercontent.com/Disha-2302004/Balanced_dataset/main/balanced_penguins_size_processed.csv')  # Replace with the correct filename
+st.write(df.head())  # Display first few rows
+
 
 
 with st.expander('Data visualization'):
